@@ -1,13 +1,15 @@
 import Layout from "./components/layout";
 import Profile from "./components/profile";
+import Repositories from "./components/repositories";
+import {ResetCSS} from "./global/resetCSS"
 
 function App() {
   return (
     <main>
+      <ResetCSS />
       <Layout>
         <Profile />
-        <div>Repository</div>
-        <div>Starreds</div>
+        <Repositories />
       </Layout>
     </main>
   );
